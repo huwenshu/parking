@@ -1,0 +1,896 @@
+﻿<div class="page-content">
+			<!-- BEGIN PAGE HEADER-->
+			<h3 class="page-title" style="font-family:'Microsoft Yahei'">
+				收费规则 <small><i class="icon-home"></i> 一段解释性文字</small>
+			</h3>
+			<div class="page-bar">
+				<ul class="page-breadcrumb">
+					<li>
+						<i class="fa fa-home"></i>
+						<a href="index.html">首页</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="#">收费模块</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="#">收费规则</a>
+					</li>
+				</ul>
+				<div class="page-toolbar">
+					<div class="btn-group pull-right">
+						<button type="button" class="btn btn-fit-height grey-salt dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">
+						切换主题 <i class="fa fa-angle-down"></i>
+						</button>
+						<ul class="dropdown-menu pull-right col-md-6" role="menu" id="styleToggle">
+							<li>
+								<a href="#" data-url="./metronic/assets/admin/layout/css/themes/default.css">default</a>
+							</li>
+							<li>
+								<a href="#" data-url="./metronic/assets/admin/layout/css/themes/grey.css">grey</a>
+							</li>
+							<li>
+								<a href="#" data-url="./metronic/assets/admin/layout/css/themes/darkblue.css">darkblue</a>
+							</li>
+							<li>
+								<a href="#" data-url="./metronic/assets/admin/layout/css/themes/blue.css">blue</a>
+							</li>
+							<li>
+								<a href="#" data-url="./metronic/assets/admin/layout/css/themes/light.css">light</a>
+							</li>
+							<li>
+								<a href="#" data-url="./metronic/assets/admin/layout/css/themes/light2.css">light2</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- END PAGE HEADER-->
+			<!-- START POTTLEX 检索------------>
+			<div class="portlet box grey-cascade" style="margin-bottom:0px;">
+				<div class="portlet-title">
+					<div class="caption">
+						<i class="icon-magnifier"></i>数据检索
+					</div>
+				</div>
+				<div class="portlet-body">
+					<form class="form-horizontal" role="form">
+						<div class="form-body">
+							<div class="form-group">
+								<div class="col-md-6" style="margin:5px 0px;">
+									<label class="col-md-3 control-label">收费规则编号</label>
+									<div class="col-md-3">
+										<input type="text" class="form-control " />
+									</div>
+
+									<label class="col-md-3 control-label">收费规则名称</label>
+									<div class="col-md-3">
+										<input type="text" class="form-control "/>
+									</div>
+								</div>
+								<div class="col-md-6" style="margin:5px 0px;">
+									<label class="col-md-3 control-label">应用类型</label>
+									<div class="col-md-3">
+										<select class="bs-select form-control " style="display: none;">
+											  <option value="---请选择---">---请选择---</option>
+									          <option value="用户组">用户组</option>
+									          <option value="车位">车位</option>
+									          <option value="车位组">车位组</option>
+									          <option value="用户组+车位">用户组+车位</option>
+									          <option value="用户组+车位组">用户组+车位组</option>
+									          <option value="车位+车位组">车位+车位组</option>
+									          <option value="用户组+车位组+车位">用户组+车位组+车位</option>
+										</select>
+									</div>
+
+									<label class="col-md-3 control-label">收费/租赁方式</label>	
+									<div class="col-md-3">
+										<select class="bs-select form-control " style="display: none;">
+											  <option value="计时">计时</option>
+									          <option value="计次">计次</option>
+									          <option value="长期">长期</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-6" style="margin:5px 0px;">
+									<label class="col-md-3 control-label">创建时间</label>
+									<div class="col-md-9">
+										<div class="input-group input-large date-picker input-daterange" data-date="10-11-2012" data-date-format="mm-dd-yyyy">
+											<input type="text" class="form-control" name="from">
+											<span class="input-group-addon">
+											to </span>
+											<input type="text" class="form-control" name="to">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6" style="margin:5px 0px;">
+									<label class="col-md-3 control-label">上次启用时间</label>
+									<div class="col-md-9">
+										<div class="input-group input-large date-picker input-daterange" data-date="10-11-2012" data-date-format="mm-dd-yyyy">
+											<input type="text" class="form-control" name="from">
+											<span class="input-group-addon">
+											to </span>
+											<input type="text" class="form-control" name="to">
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-6" style="margin:5px 0px;">
+									<label class="col-md-3 control-label">上次禁用时间</label>
+									<div class="col-md-9">
+										<div class="input-group input-large date-picker input-daterange" data-date="10-11-2012" data-date-format="mm-dd-yyyy">
+											<input type="text" class="form-control" name="from">
+											<span class="input-group-addon">
+											to </span>
+											<input type="text" class="form-control" name="to">
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-6" style="margin:5px 0px;">
+									<label class="col-md-3 control-label">状态</label>	
+									<div class="col-md-3">
+										<select class="bs-select form-control " style="display: none;">
+											  <option value="启用">启用</option>
+									          <option value="禁用">禁用</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-12" style="margin-top:15px;">
+									<div class="col-md-6">
+										<button type="submit" class="btn green col-md-2 col-md-offset-10">查询</button>
+									</div>
+									<div class="col-md-6">
+										<button type="reset" class="btn default col-md-2">清空</button>
+									</div>
+								</div>
+							</div><!--form-group-->
+						</div><!--form-body-->
+					</form>
+				</div>
+			</div>
+			<!-- END POTTLEX 检索------------>
+
+			<!-- START POTTLEX demo2------------>
+			<div class="portlet box grey-cascade" style="margin-top:15px;border-top:1px solid #b1bdbd">
+				<div class="portlet-body">
+					<div class="btn-group" role="group" aria-label="..." style="margin-bottom:15px;">
+						<button type="button" class="btn btn-default" data-target="#add" data-toggle="modal">
+							<span class="glyphicon glyphicon-plus" ></span>
+							 新增
+						</button>
+						<button type="button" class="btn btn-default" data-target="#modify" data-toggle="modal">
+							<span class="glyphicon glyphicon-pencil"></span>
+							 修改
+						</button>
+						<button type="button" class="btn btn-default" data-target="#disabled" data-toggle="modal">
+							<span class="glyphicon glyphicon-ban-circle"></span>
+							 禁用
+						</button>
+						<button type="button" class="btn btn-default"  data-target="#enable" data-toggle="modal">
+							<span class="glyphicon glyphicon-ok-circle"></span>
+							 启用
+						</button>
+						<a  class="btn btn-default" href="/parking/index.html?history_content3" target="_blank">
+							<span class="glyphicon glyphicon-th-list"></span>
+							 查看规则修改历史
+						</a>
+					</div>
+					<table class="table table-bordered table-hover" id="favourable">
+							<thead>
+							<tr>
+								<th class="table-checkbox">
+									<input type="checkbox" class="group-checkable" data-set="#favourable .checkboxes"/>
+								</th>
+								<th>
+									 收费规则编号
+								</th>
+								<th>
+									 收费规则名称
+								</th>
+								<th>
+									 应用类型
+								</th>
+								<th>
+									租赁方式
+								</th>
+								<th>
+									 状态
+								</th>
+								<th>
+									 创建时间
+								</th>
+								<th>
+									 上次启用时间
+								</th>
+								<th>
+									 上次禁用时间
+								</th>
+								<th>
+									 操作
+								</th>
+							</tr>
+							</thead>
+							<tbody>
+								<tr class="odd gradeX">
+									<td>
+										<input type="checkbox" class="checkboxes" value="1"/>
+									</td>
+									<td>
+										 123456
+									</td>
+									<td>
+										ddsfds
+									</td>
+									<td>
+										 会员生日
+									</td>
+									<td>
+										 计时
+									</td>
+									<td class="center">
+										 <span class="label label-sm label-success">
+										启用</span>
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td class="center">
+										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
+									</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>
+										<input type="checkbox" class="checkboxes" value="1"/>
+									</td>
+									<td>
+										 123456
+									</td>
+									<td>
+										ddsfds
+									</td>
+									<td>
+										 节假日
+									</td>
+									<td>
+										 计次
+									</td>
+									<td class="center">
+										 <span class="label label-sm label-warning">
+										未启用</span>
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td class="center">
+										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
+									</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>
+										<input type="checkbox" class="checkboxes" value="1"/>
+									</td>
+									<td>
+										 123456
+									</td>
+									<td>
+										ddsfds
+									</td>
+									<td>
+										 双休日
+									</td>
+									<td>
+										 长期
+									</td>
+									<td class="center">
+										 <span class="label label-sm label-success">
+										启用</span>
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td class="center">
+										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
+									</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>
+										<input type="checkbox" class="checkboxes" value="1"/>
+									</td>
+									<td>
+										 123456
+									</td>
+									<td>
+										ddsfds
+									</td>
+									<td>
+										 规定时间段
+									</td>
+									<td>
+										 长期
+									</td>
+									<td class="center">
+										 <span class="label label-sm label-warning">
+										未启用</span>
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td class="center">
+										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
+									</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>
+										<input type="checkbox" class="checkboxes" value="1"/>
+									</td>
+									<td>
+										 123456
+									</td>
+									<td>
+										ddsfds
+									</td>
+									<td>
+										 规定日期段
+									</td>
+									<td>
+										 长期
+									</td>
+									<td class="center">
+										 <span class="label label-sm label-success">
+										启用</span>
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td class="center">
+										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
+									</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>
+										<input type="checkbox" class="checkboxes" value="1"/>
+									</td>
+									<td>
+										 123456
+									</td>
+									<td>
+										ddsfds
+									</td>
+									<td>
+										 续办折扣
+									</td>
+									<td>
+										 长期
+									</td>
+									<td class="center">
+										 <span class="label label-sm label-success">
+										启用</span>
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td class="center">
+										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
+									</td>
+								</tr>
+							</tbody>
+							</table>
+				</div>
+			</div>
+			<!-- END POTTLEX demo2------------>
+		</div>
+
+
+
+		<!--这个页面的弹窗都在这里 start-->
+	<div id
+="add" class="modal fade" tabindex="-1" data-width="400" > <!--添加 start-->
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title" style="font-family:'Microsoft Yahei'">
+						<span class="glyphicon glyphicon-plus" ></span>
+							 添加优惠规则
+					</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-12">
+							<form class="form-horizontal" role="form">
+								<div class="form-body">
+									<div class="form-group">
+										<label class="col-md-4 control-label">优惠规则编号</label>
+										<div class="col-md-6"><input type="text" class="form-control"></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">优惠规则名称</label>
+										<div class="col-md-6"><input type="text" class="form-control"></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">优惠规则类型</label>
+										<div class="col-md-6">
+											<select class="bs-select form-control " style="display: none;">
+												<option value="规定时间段">规定时间段</option>
+									            <option value="规定日期段">规定日期段</option>
+									            <option value="节假日">节假日</option>
+									            <option value="双休日">双休日</option>
+									            <option value="会员生日">会员生日</option>
+									            <option value="续办折扣">续办折扣</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">起始时间</label>
+										<div class="col-md-6">
+											<div class="input-group">
+												<input type="text" class="form-control timepicker timepicker-24">
+												<span class="input-group-btn">
+												<button class="btn default" type="button"><i class="fa fa-clock-o"></i></button>
+												</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">结束时间</label>
+										<div class="col-md-6">
+											<div class="input-group">
+												<input type="text" class="form-control timepicker timepicker-24">
+												<span class="input-group-btn">
+												<button class="btn default" type="button"><i class="fa fa-clock-o"></i></button>
+												</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">起始日期</label>
+										<div class="col-md-6">
+											<div class="input-group input-medium date date-picker" data-date="12-02-2012" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
+												<input type="text" class="form-control" readonly="">
+												<span class="input-group-btn">
+												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
+												</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">结束日期</label>
+										<div class="col-md-6">
+											<div class="input-group input-medium date date-picker" data-date="12-02-2012" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
+												<input type="text" class="form-control" readonly="">
+												<span class="input-group-btn">
+												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
+												</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">双休日类型</label>
+										<div class="col-md-6">
+											<div class="col-md-12">
+												<input id="saturday" type="radio" name="radio" value="saturday">
+												<label for="saturday" class="control-label" style="display:inline-block;vertical-align:middle;">周六</label>
+											</div>
+											<div class="col-md-12">
+												<input id="sunday" type="radio" name="radio" value="sunday">
+												<label for="sunday" class="control-label" style="display:inline-block;vertical-align:middle;">周天</label>
+											</div>
+											<div class="col-md-12">
+												<input id="sat_sun" type="radio" name="radio" value="sat_sun">
+												<label for="sat_sun" class="control-label" style="display:inline-block;vertical-align:middle;">周六+周日</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">折扣</label>
+										<div class="col-md-4">
+											<div class="input-inline input-medium">
+												<div class="input-inline input-medium">
+													<input class="discount" type="text" value="55" name="demo1" class="form-control">
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+					<button type="button" class="btn green">保存</button>
+				</div>
+			</div>
+		</div>
+	</div><!--添加 end-->
+
+
+	<div id="modify" class="modal fade" tabindex="-1" data-width="400" > <!--修改 start-->
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title" style="font-family:'Microsoft Yahei'">
+						<span class="glyphicon glyphicon-pencil" ></span>
+							 修改优惠规则
+					</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-12">
+							<form class="form-horizontal" role="form">
+								<div class="form-body">
+									<div class="form-group">
+										<label class="col-md-4 control-label">优惠规则编号</label>
+										<div class="col-md-6"><input type="text" class="form-control"></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">优惠规则名称</label>
+										<div class="col-md-6"><input type="text" class="form-control"></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">优惠规则类型</label>
+										<div class="col-md-6">
+											<select class="bs-select form-control " style="display: none;">
+												<option value="规定时间段">规定时间段</option>
+									            <option value="规定日期段">规定日期段</option>
+									            <option value="节假日">节假日</option>
+									            <option value="双休日">双休日</option>
+									            <option value="会员生日">会员生日</option>
+									            <option value="续办折扣">续办折扣</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">起始时间</label>
+										<div class="col-md-6">
+											<div class="input-group">
+												<input type="text" class="form-control timepicker timepicker-24">
+												<span class="input-group-btn">
+												<button class="btn default" type="button"><i class="fa fa-clock-o"></i></button>
+												</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">结束时间</label>
+										<div class="col-md-6">
+											<div class="input-group">
+												<input type="text" class="form-control timepicker timepicker-24">
+												<span class="input-group-btn">
+												<button class="btn default" type="button"><i class="fa fa-clock-o"></i></button>
+												</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">起始日期</label>
+										<div class="col-md-6">
+											<div class="input-group input-medium date date-picker" data-date="12-02-2012" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
+												<input type="text" class="form-control" readonly="">
+												<span class="input-group-btn">
+												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
+												</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">结束日期</label>
+										<div class="col-md-6">
+											<div class="input-group input-medium date date-picker" data-date="12-02-2012" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
+												<input type="text" class="form-control" readonly="">
+												<span class="input-group-btn">
+												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
+												</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">双休日类型</label>
+										<div class="col-md-6">
+											<div class="col-md-12">
+												<input id="saturday" type="radio" name="radio" value="saturday">
+												<label for="saturday" class="control-label" style="display:inline-block;vertical-align:middle;">周六</label>
+											</div>
+											<div class="col-md-12">
+												<input id="sunday" type="radio" name="radio" value="sunday">
+												<label for="sunday" class="control-label" style="display:inline-block;vertical-align:middle;">周天</label>
+											</div>
+											<div class="col-md-12">
+												<input id="sat_sun" type="radio" name="radio" value="sat_sun">
+												<label for="sat_sun" class="control-label" style="display:inline-block;vertical-align:middle;">周六+周日</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">折扣</label>
+										<div class="col-md-4">
+											<div class="input-inline input-medium">
+												<div class="input-inline input-medium">
+													<input class="discount" type="text" value="55" name="demo1" class="form-control">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+					<button type="button" class="btn green">保存</button>
+				</div>
+			</div>
+		</div>
+	</div><!--修改 end-->
+
+
+	<div id="disabled" class="modal fade" tabindex="-1" data-width="400" > <!--修改 start-->
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title" style="font-family:'Microsoft Yahei'">
+						<span class="glyphicon glyphicon-ban-circle" ></span>
+							 禁用
+					</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-12">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" data-dismiss="modal" class="btn">Close</button>
+					<button type="button" class="btn red">Ok</button>
+				</div>
+			</div>
+		</div>
+	</div><!--修改 end-->
+
+	<div id="enable" class="modal fade" tabindex="-1" data-width="400" > <!--修改 start-->
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title" style="font-family:'Microsoft Yahei'">
+						<span class="glyphicon glyphicon-ok-circle" ></span>
+							 启用
+					</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-12">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" data-dismiss="modal" class="btn">Close</button>
+					<button type="button" class="btn red">Ok</button>
+				</div>
+			</div>
+		</div>
+	</div><!--修改 end-->
+
+	<div id="yh_rule" class="modal fade" tabindex="-1" data-width="400" > <!--查看 start-->
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title" style="font-family:'Microsoft Yahei'">
+						<span class="glyphicon glyphicon-ban-circle" ></span>
+							 查看优惠规则
+					</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-12">
+							<form class="form-horizontal" role="form">
+								<div class="form-body">
+									<div class="form-group">
+										<label class="col-md-4 control-label">优惠规则编号</label>
+										<div class="col-md-6"><input type="text" class="form-control"></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">优惠规则名称</label>
+										<div class="col-md-6"><input type="text" class="form-control"></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">优惠规则类型</label>
+										<div class="col-md-6">
+											<select class="bs-select form-control " style="display: none;">
+												<option value="规定时间段">规定时间段</option>
+									            <option value="规定日期段">规定日期段</option>
+									            <option value="节假日">节假日</option>
+									            <option value="双休日">双休日</option>
+									            <option value="会员生日">会员生日</option>
+									            <option value="续办折扣">续办折扣</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">创建时间</label>
+										<div class="col-md-6">
+											<div class="input-group">
+												<input type="text" class="form-control timepicker timepicker-24">
+												<span class="input-group-btn">
+												<button class="btn default" type="button"><i class="fa fa-clock-o"></i></button>
+												</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">上次启用时间</label>
+										<div class="col-md-6">
+											<div class="input-group">
+												<input type="text" class="form-control timepicker timepicker-24">
+												<span class="input-group-btn">
+												<button class="btn default" type="button"><i class="fa fa-clock-o"></i></button>
+												</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label">上次禁用时间</label>
+										<div class="col-md-6">
+											<div class="input-group">
+												<input type="text" class="form-control timepicker timepicker-24">
+												<span class="input-group-btn">
+												<button class="btn default" type="button"><i class="fa fa-clock-o"></i></button>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+					<button type="button" class="btn green">确定</button>
+				</div>
+			</div>
+		</div>
+	</div><!--查看 end-->
+
+
+
+
+<!--这个页面的弹窗都在这里 end-->
+
+
+
+
+<script type="text/javascript">
+  $(function(){
+  	ComponentsDropdowns.init();	  
+	//日期框的初始化
+	$('.date-picker').datepicker({
+	    rtl: Metronic.isRTL(),
+	    orientation: "left",
+	    autoclose: true
+	});
+
+	//时间框的初始化
+	$('.timepicker-24').timepicker({
+	    autoclose: true,
+	    minuteStep: 5,
+	    showSeconds: false,
+	    showMeridian: false
+	});
+
+	//折扣那个不知道叫什么的插件的初始化
+	 $(".discount").TouchSpin({
+		buttondown_class: 'btn blue',
+		buttonup_class: 'btn blue',
+		min: 0,
+		max: 100,
+		step: 0.1,
+		decimals: 2,
+		boostat: 5,
+		maxboostedstep: 10,
+		postfix: '%'
+	});  
+
+	//那个表格的初始化
+	;(function () {
+	    var dataTable_config = {//jquery_datatable插件的默认参数配置
+	        //下面设置数据栏目是否可排序
+	        "columns": [{
+	        	"orderable": false //0
+	        }, {
+	            "orderable": true  //1
+	        }, {
+	            "orderable": false //2
+	        }, 
+	        {
+	            "orderable": true //2
+	        },{
+	            "orderable": false //3
+	        }, {
+	            "orderable": false  //4
+	        }, {
+	            "orderable": true //5
+	        },{
+	        	"orderable":true //6
+	        },{
+	        	"orderable":true //7
+	        },{
+	        	"orderable":false //8
+	        }]
+	    };
+
+	    var $table = $('#favourable');
+	    dataTable_config = $.extend({},dataTable_config,$.global_config.table_config);
+	    $table.dataTable(dataTable_config);
+	    $.table_init($table);
+	    $('#styleToggle').toggleStyle('style_color');
+	    
+	})();       
+
+	});
+
+		</script>

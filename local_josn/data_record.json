@@ -1,0 +1,11 @@
+﻿{
+	"id":"123",
+	"name":"hehe",
+	"type":"规定时间段",
+	"start_time":"11:22",
+	"end_time":"22:11",
+	"start_date":"2014-01-20",
+	"end_date":"2014-01-22",
+	"weekend_type":"saturday",
+	"discount":"52"
+}
