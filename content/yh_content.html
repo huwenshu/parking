@@ -98,7 +98,7 @@
 										<div class="input-group input-large date-picker input-daterange" data-date="10-11-2012" data-date-format="mm-dd-yyyy">
 											<input type="text" class="form-control" name="from">
 											<span class="input-group-addon">
-											to </span>
+											至 </span>
 											<input type="text" class="form-control" name="to">
 										</div>
 									</div>
@@ -109,7 +109,7 @@
 										<div class="input-group input-large date-picker input-daterange" data-date="10-11-2012" data-date-format="mm-dd-yyyy">
 											<input type="text" class="form-control" name="from">
 											<span class="input-group-addon">
-											to </span>
+											至 </span>
 											<input type="text" class="form-control" name="to">
 										</div>
 									</div>
@@ -121,7 +121,7 @@
 										<div class="input-group input-large date-picker input-daterange" data-date="10-11-2012" data-date-format="mm-dd-yyyy">
 											<input type="text" class="form-control" name="from">
 											<span class="input-group-addon">
-											to </span>
+											至 </span>
 											<input type="text" class="form-control" name="to">
 										</div>
 									</div>
@@ -458,17 +458,12 @@
 									<div class="form-group">
 										<label class="col-md-4 control-label">双休日类型</label>
 										<div class="col-md-6">
-											<div class="col-md-12">
-												<input id="saturday" type="radio" name="radio" value="saturday">
-												<label for="saturday" class="control-label" style="display:inline-block;vertical-align:middle;">周六</label>
-											</div>
-											<div class="col-md-12">
-												<input id="sunday" type="radio" name="radio" value="sunday">
-												<label for="sunday" class="control-label" style="display:inline-block;vertical-align:middle;">周天</label>
-											</div>
-											<div class="col-md-12">
-												<input id="sat_sun" type="radio" name="radio" value="sat_sun">
-												<label for="sat_sun" class="control-label" style="display:inline-block;vertical-align:middle;">周六+周日</label>
+											<div class="icheck-list">
+												<label><input id="saturday" type="radio" name="radio" value="saturday"/>周六</label>
+												
+												<label><input id="sunday" type="radio" name="radio" value="sunday"/>周天</label>
+												
+												<label><input id="sat_sun" type="radio" name="radio" value="sat_sun"/>周六+周日</label>
 											</div>
 										</div>
 									</div>
@@ -806,6 +801,12 @@
 	    orientation: "left",
 	    autoclose: true
 	});
+
+	 $('input').iCheck({
+	    checkboxClass: 'icheckbox_minimal',
+	    radioClass: 'iradio_minimal',
+	    increaseArea: '20%' // optional
+	  });
 
 	//时间框的初始化
 	$('.timepicker-24').timepicker({
