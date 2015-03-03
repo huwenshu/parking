@@ -580,24 +580,19 @@
 										</div>
 									</div>
 
-									<!-- <div class="form-group">
+									<div class="form-group">
 										<label class="col-md-4 control-label">双休日类型</label>
 										<div class="col-md-6">
-											<div class="col-md-12">
-												<input id="saturday" type="radio" name="info.weekend_type" value="saturday" >
-												<label for="saturday" class="control-label" style="display:inline-block;vertical-align:middle;">周六</label>
-											</div>
-											<div class="col-md-12">
-												<input id="sunday" type="radio" name="info.weekend_type" value="sunday">
-												<label for="sunday" class="control-label" style="display:inline-block;vertical-align:middle;">周天</label>
-											</div>
-											<div class="col-md-12">
-												<input id="sat_sun" type="radio" name="info.weekend_type" value="sat_sun">
-												<label for="sat_sun" class="control-label" style="display:inline-block;vertical-align:middle;">周六+周日</label>
+											<div class="icheck-list">
+												<label><input id="saturday" type="radio" name="radio" value="saturday"/>周六</label>
+												
+												<label><input id="sunday" type="radio" name="radio" value="sunday"/>周天</label>
+												
+												<label><input id="sat_sun" type="radio" name="radio" value="sat_sun"/>周六+周日</label>
 											</div>
 										</div>
-									</div> -->
-									<div class="form-group">
+									</div>
+									<!-- <div class="form-group">
 										<label class="col-md-4 control-label">Radio List</label>
 										<div class="col-md-8">
 											<div class="input-group">
@@ -614,7 +609,7 @@
 												</div>
 											</div>
 										</div>
-									</div>
+									</div> -->
 
 									<div class="form-group">
 										<label class="col-md-4 control-label">折扣</label>
@@ -794,6 +789,7 @@
 		}
 	})(window,$);
   $(function(){
+  	Metronic.init();
   	ComponentsDropdowns.init();	  
 	//日期框的初始化
 	$('.date-picker').datepicker({
@@ -801,12 +797,6 @@
 	    orientation: "left",
 	    autoclose: true
 	});
-
-	 $('input').iCheck({
-	    checkboxClass: 'icheckbox_minimal',
-	    radioClass: 'iradio_minimal',
-	    increaseArea: '20%' // optional
-	  });
 
 	//时间框的初始化
 	$('.timepicker-24').timepicker({
@@ -856,6 +846,7 @@
 	    var $table = $('#favourable');
 	    $table.dataTable(dataTable_config);//表格插件初始化
 	    $.table_init($table);//表格选择初始化
+
 	    $('tbody > tr',$('#favourable')).dbclick($('#yh_rule'));//双击查看详情
 	    $('#styleToggle').toggleStyle('style_color');//切换样式
 	})();  

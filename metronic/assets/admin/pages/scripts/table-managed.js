@@ -5,7 +5,7 @@ var TableManaged = function () {
         var table = $('#sample_1');
 
         // begin first table
- table.dataTable({
+        table.dataTable({
 
         //     // Internationalisation. For more info refer to http://datatables.net/manual/i18n
         //     "language": {
