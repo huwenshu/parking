@@ -180,9 +180,9 @@
 								<th>
 									 上次禁用时间
 								</th>
-								<th>
+<!-- 								<th>
 									 操作
-								</th>
+								</th> -->
 							</tr>
 							</thead>
 							<tbody>
@@ -209,9 +209,9 @@
 									<td>
 										2014-01-20 11:22:11
 									</td>
-									<td class="center">
+				<!-- 					<td class="center">
 										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
-									</td>
+									</td> -->
 								</tr>
 								<tr class="odd gradeX">
 									<td>
@@ -236,9 +236,9 @@
 									<td>
 										2014-01-20 11:22:11
 									</td>
-									<td class="center">
+						<!-- 			<td class="center">
 										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
-									</td>
+									</td> -->
 								</tr>
 								<tr class="odd gradeX">
 									<td>
@@ -263,9 +263,9 @@
 									<td>
 										2014-01-20 11:22:11
 									</td>
-									<td class="center">
+								<!-- 	<td class="center">
 										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
-									</td>
+									</td> -->
 								</tr>
 								<tr class="odd gradeX">
 									<td>
@@ -290,9 +290,9 @@
 									<td>
 										2014-01-20 11:22:11
 									</td>
-									<td class="center">
+							<!-- 		<td class="center">
 										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
-									</td>
+									</td> -->
 								</tr>
 							</tbody>
 							</table>
@@ -781,9 +781,11 @@
 	            "orderable": true //5
 	        },{
 	        	"orderable":true //6
-	        },{
-	        	"orderable":false //7
-	        }]
+	        }
+	        // ,{
+	        // 	"orderable":false //7
+	        // }
+	        ]
 	    };
 	    dataTable_config = $.extend({},dataTable_config,$.global_config.table_config);//合并表格配置参数
 	    var $table = $('#tb2');
