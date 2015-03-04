@@ -178,9 +178,6 @@
 								<th>
 									 上次禁用时间
 								</th>
-								<th>
-									 操作
-								</th>
 							</tr>
 							</thead>
 							<tbody>
@@ -207,8 +204,53 @@
 									<td>
 										2014-01-20 11:22:11
 									</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>
+										<input type="checkbox" class="checkboxes" value="1"/>
+									</td>
+									<td>
+										 123456
+									</td>
+									<td>
+										ddsfds
+									</td>
 									<td class="center">
-										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
+										 <span class="label label-sm label-warning">
+										未启用</span>
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>
+										<input type="checkbox" class="checkboxes" value="1"/>
+									</td>
+									<td>
+										 123456
+									</td>
+									<td>
+										ddsfds
+									</td>
+									<td class="center">
+										 <span class="label label-sm label-success">
+										启用</span>
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td>
+										2014-01-20 11:22:11
+									</td>
+									<td>
+										2014-01-20 11:22:11
 									</td>
 								</tr>
 								<tr class="odd gradeX">
@@ -234,9 +276,6 @@
 									<td>
 										2014-01-20 11:22:11
 									</td>
-									<td class="center">
-										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
-									</td>
 								</tr>
 								<tr class="odd gradeX">
 									<td>
@@ -261,36 +300,6 @@
 									<td>
 										2014-01-20 11:22:11
 									</td>
-									<td class="center">
-										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
-									</td>
-								</tr>
-								<tr class="odd gradeX">
-									<td>
-										<input type="checkbox" class="checkboxes" value="1"/>
-									</td>
-									<td>
-										 123456
-									</td>
-									<td>
-										ddsfds
-									</td>
-									<td class="center">
-										 <span class="label label-sm label-warning">
-										未启用</span>
-									</td>
-									<td>
-										2014-01-20 11:22:11
-									</td>
-									<td>
-										2014-01-20 11:22:11
-									</td>
-									<td>
-										2014-01-20 11:22:11
-									</td>
-									<td class="center">
-										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
-									</td>
 								</tr>
 								<tr class="odd gradeX">
 									<td>
@@ -314,36 +323,6 @@
 									</td>
 									<td>
 										2014-01-20 11:22:11
-									</td>
-									<td class="center">
-										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
-									</td>
-								</tr>
-								<tr class="odd gradeX">
-									<td>
-										<input type="checkbox" class="checkboxes" value="1"/>
-									</td>
-									<td>
-										 123456
-									</td>
-									<td>
-										ddsfds
-									</td>
-									<td class="center">
-										 <span class="label label-sm label-success">
-										启用</span>
-									</td>
-									<td>
-										2014-01-20 11:22:11
-									</td>
-									<td>
-										2014-01-20 11:22:11
-									</td>
-									<td>
-										2014-01-20 11:22:11
-									</td>
-									<td class="center">
-										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
 									</td>
 								</tr>
 							</tbody>
@@ -809,8 +788,6 @@
 	            "orderable": true //5
 	        },{
 	        	"orderable":true //6
-	        },{
-	        	"orderable":false //7
 	        }]
 	    };
 	    dataTable_config = $.extend({},dataTable_config,$.global_config.table_config);//合并表格配置参数
