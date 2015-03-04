@@ -8,7 +8,8 @@
 	        ],
 	        // 设置初始值
 	        "pageLength": 5,            
-	        "pagingType": "bootstrap_full_number",
+	        "bFilter": false,
+            "sPaginationType": "full_numbers", 
 	        "language": {
 	            "search": "搜索: ",
 	            "lengthMenu": "  _MENU_ 条数据",
@@ -20,11 +21,11 @@
 	            "search": "查询:",
 	            "zeroRecords": "没有找到对应的数据",
 	            "paginate": {
-	                "previous":"Prev",
-	                "next": "Next",
-	                "last": "Last",
-	                "first": "First"
-	            }
+	                "previous":"上一页",
+	                "next": "下一页",
+	                "last": "末页",
+	                "first": "首页"
+            	}
 	        },
 	        "columnDefs": [{  // 设置默认值
 	            'orderable': false,
