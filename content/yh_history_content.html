@@ -60,68 +60,79 @@
 							<div class="form-group">
 								<div class="col-md-6" style="margin:5px 0px;">
 									<label class="col-md-3 control-label">优惠规则编号</label>
-									<div class="col-md-3">
+									<div class="col-md-6">
 										<input type="text" class="form-control " />
 									</div>
-
-									<label class="col-md-3 control-label">优惠规则名称</label>
-									<div class="col-md-3">
-										<input type="text" class="form-control "/>
-									</div>
 								</div>
-								<div class="col-md-6" style="margin:5px 0px;">
-									<label class="col-md-3 control-label">类型</label>
-									<div class="col-md-3">
-										<select class="bs-select form-control " style="display: none;">
-											<option selected="" value="-请选择-">-请选择-</option>
-											<option value="会员生日">会员生日</option>
-								          	<option value="节假日">节假日</option>
-								            <option value="双休日">双休日</option>
-								            <option value="规定时间段">规定时间段</option>
-								            <option value="规定日期段">规定日期段</option>
-								            <option value="续办折扣">续办折扣</option>
-										</select>
-									</div>
+								<div class="col-md-12">
+									<div class="col-md-5">
 
-									<label class="col-md-2 control-label">状态</label>
-									<div class="col-md-3">
-										<select class="bs-select form-control " style="display: none;">
-											<option selected="" value="-请选择-">-请选择-</option>
-											<option value="启用">启用</option>
-									        <option value="禁用">禁用</option>
-										</select>
 									</div>
+									<div class="col-md-7">
+										<a href="javascript:$('.search_2').toggle();" class="col-md-offset-1" style="display:inline-block;">精确搜索<span class="collapse"></span></a>
+									</div>
+									<!-- <div class="col-md-6" style="margin:5px 0px;">
+										<label class="col-md-3 control-label">
+											<a href="javascript:$('.search_2').toggle();" class="col-md-offset-1" style="display:inline-block;">精确搜索</a>
+										</label>
+									</div> -->
 								</div>
-								<div class="col-md-6" style="margin:5px 0px;">
-									<label class="col-md-3 control-label">创建时间</label>
-									<div class="col-md-9">
-										<div class="input-group input-large date-picker input-daterange" data-date="10-11-2012" data-date-format="mm-dd-yyyy">
-											<input type="text" class="form-control" name="from">
-											<span class="input-group-addon">
-											to </span>
-											<input type="text" class="form-control" name="to">
+								<div class="col-md- search_2" style="padding:0px;display:none;">
+									<div class="col-md-6" style="margin:5px 0px;">
+										<label class="col-md-3 control-label">类型</label>
+										<div class="col-md-3">
+											<select class="bs-select form-control " style="display: none;">
+												<option selected="" value="-请选择-">-请选择-</option>
+												<option value="会员生日">会员生日</option>
+									          	<option value="节假日">节假日</option>
+									            <option value="双休日">双休日</option>
+									            <option value="规定时间段">规定时间段</option>
+									            <option value="规定日期段">规定日期段</option>
+									            <option value="续办折扣">续办折扣</option>
+											</select>
+										</div>
+
+
+										<label class="col-md-2 control-label">状态</label>
+										<div class="col-md-3">
+											<select class="bs-select form-control " style="display: none;">
+												<option selected="" value="-请选择-">-请选择-</option>
+												<option value="启用">启用</option>
+										        <option value="禁用">禁用</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6" style="margin:5px 0px;">
+										<label class="col-md-3 control-label">创建时间</label>
+										<div class="col-md-9">
+											<div class="input-group input-large date-picker input-daterange" data-date="10-11-2012" data-date-format="mm-dd-yyyy">
+												<input type="text" class="form-control" name="from">
+												<span class="input-group-addon">
+												至 </span>
+												<input type="text" class="form-control" name="to">
+											</div>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-6" style="margin:5px 0px;">
+								<div class="col-md-6 search_2" style="margin:5px 0px;display:none;">
 									<label class="col-md-3 control-label">上次启用时间</label>
 									<div class="col-md-9">
 										<div class="input-group input-large date-picker input-daterange" data-date="10-11-2012" data-date-format="mm-dd-yyyy">
 											<input type="text" class="form-control" name="from">
 											<span class="input-group-addon">
-											to </span>
+											至 </span>
 											<input type="text" class="form-control" name="to">
 										</div>
 									</div>
 								</div>
 
-								<div class="col-md-6" style="margin:5px 0px;">
+								<div class="col-md-6 search_2" style="margin:5px 0px;display:none;">
 									<label class="col-md-3 control-label">上次禁用时间</label>
 									<div class="col-md-9">
 										<div class="input-group input-large date-picker input-daterange" data-date="10-11-2012" data-date-format="mm-dd-yyyy">
 											<input type="text" class="form-control" name="from">
 											<span class="input-group-addon">
-											to </span>
+											至 </span>
 											<input type="text" class="form-control" name="to">
 										</div>
 									</div>
@@ -761,13 +772,17 @@
 
 
 <script type="text/javascript">
+
   $(function(){
+  	Metronic.init();
   	ComponentsDropdowns.init();	  
 	//日期框的初始化
 	$('.date-picker').datepicker({
 	    rtl: Metronic.isRTL(),
 	    orientation: "left",
-	    autoclose: true
+	    autoclose: true,
+	    format:'yyyy/mm/dd',
+	    language:'zh-CN'
 	});
 
 	//时间框的初始化
@@ -805,18 +820,21 @@
 	            "orderable": false //3
 	        }, {
 	            "orderable": false  //4
-	        }, {
+	        }
+	        , {
 	            "orderable": true //5
 	        },{
 	        	"orderable":true //6
 	        },{
 	        	"orderable":true //7
-	        }]
+	        }
+	        ]
 	    };
 		dataTable_config = $.extend({},dataTable_config,$.global_config.table_config);//合并表格配置参数
 	    var $table = $('#favourable');
 	    $table.dataTable(dataTable_config);//表格插件初始化
 	    $.table_init($table);//表格选择初始化
+	    $('tbody > tr',$('#favourable')).dbclick($('#yh_rule'));//双击查看详情
 	    $('#styleToggle').toggleStyle('style_color');//切换样式插件初始化
 	})();       
 

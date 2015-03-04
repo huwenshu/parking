@@ -60,16 +60,30 @@
 							<div class="form-group">
 								<div class="col-md-6" style="margin:5px 0px;">
 									<label class="col-md-3 control-label">优惠规则组编号</label>
-									<div class="col-md-3">
+									<div class="col-md-6">
 										<input type="text" class="form-control " />
-									</div>
-
-									<label class="col-md-3 control-label">优惠规则组名称</label>
-									<div class="col-md-3">
-										<input type="text" class="form-control "/>
 									</div>
 								</div>
 								<div class="col-md-6" style="margin:5px 0px;">
+									<label class="col-md-3 control-label">优惠规则组名称</label>
+									<div class="col-md-6">
+										<input type="text" class="form-control "/>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="col-md-5">
+
+									</div>
+									<div class="col-md-7">
+										<a href="javascript:$('.search_2').toggle();" class="col-md-offset-1" style="display:inline-block;">精确搜索<span class="collapse"></span></a>
+									</div>
+									<!-- <div class="col-md-6" style="margin:5px 0px;">
+										<label class="col-md-3 control-label">
+											<a href="javascript:$('.search_2').toggle();" class="col-md-offset-1" style="display:inline-block;">精确搜索</a>
+										</label>
+									</div> -->
+								</div>
+								<div class="col-md-6 search_2" style="margin:5px 0px;display:none;">
 									<label class="col-md-3 control-label">状态</label>
 									<div class="col-md-3">
 										<select class="bs-select form-control " style="display: none;">
@@ -78,7 +92,8 @@
 										</select>
 									</div>
 								</div>
-								<div class="col-md-6" style="margin:5px 0px;">
+
+								<div class="col-md-6 search_2" style="margin:5px 0px;display:none;" >
 									<label class="col-md-3 control-label">创建时间</label>
 									<div class="col-md-9">
 										<div class="input-group input-large date-picker input-daterange" data-date="10-11-2012" data-date-format="mm-dd-yyyy">
@@ -89,7 +104,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-md-6" style="margin:5px 0px;">
+								<div class="col-md-6 search_2" style="margin:5px 0px;display:none;">
 									<label class="col-md-3 control-label">上次启用时间</label>
 									<div class="col-md-9">
 										<div class="input-group input-large date-picker input-daterange" data-date="10-11-2012" data-date-format="mm-dd-yyyy">
@@ -101,7 +116,7 @@
 									</div>
 								</div>
 
-								<div class="col-md-6" style="margin:5px 0px;">
+								<div class="col-md-6 search_2" style="margin:5px 0px;display:none;">
 									<label class="col-md-3 control-label">上次禁用时间</label>
 									<div class="col-md-9">
 										<div class="input-group input-large date-picker input-daterange" data-date="10-11-2012" data-date-format="mm-dd-yyyy">
@@ -147,7 +162,7 @@
 							<span class="glyphicon glyphicon-ok-circle"></span>
 							 启用
 						</button>
-						<a  class="btn btn-default" href="/parking/index.html?history_content2" target="_blank">
+						<a  class="btn btn-default" href="/parking/index.html?yh_group_history_content" target="_blank">
 							<span class="glyphicon glyphicon-th-list"></span>
 							 查看规则组修改历史
 						</a>
@@ -169,9 +184,9 @@
 									 优惠规则组名称
 								</th>
 								<th>
-									 状态112
+									 状态
 								</th>
-								<th>
+								<!-- <th>
 									 创建时间
 								</th>
 								<th>
@@ -179,7 +194,7 @@
 								</th>
 								<th>
 									 上次禁用时间
-								</th>
+								</th> -->
 <!-- 								<th>
 									 操作
 								</th> -->
@@ -200,7 +215,7 @@
 										 <span class="label label-sm label-success">
 										启用</span>
 									</td>
-									<td>
+									<!-- <td>
 										2014-01-20 11:22:11
 									</td>
 									<td>
@@ -208,7 +223,7 @@
 									</td>
 									<td>
 										2014-01-20 11:22:11
-									</td>
+									</td> -->
 				<!-- 					<td class="center">
 										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
 									</td> -->
@@ -227,7 +242,7 @@
 										 <span class="label label-sm label-success">
 										启用</span>
 									</td>
-									<td>
+									<!-- <td>
 										2014-01-20 11:22:11
 									</td>
 									<td>
@@ -235,7 +250,7 @@
 									</td>
 									<td>
 										2014-01-20 11:22:11
-									</td>
+									</td> -->
 						<!-- 			<td class="center">
 										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
 									</td> -->
@@ -254,7 +269,7 @@
 										 <span class="label label-sm label-warning">
 										未启用</span>
 									</td>
-									<td>
+									<!-- <td>
 										2014-01-20 11:22:11
 									</td>
 									<td>
@@ -262,7 +277,7 @@
 									</td>
 									<td>
 										2014-01-20 11:22:11
-									</td>
+									</td> -->
 								<!-- 	<td class="center">
 										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
 									</td> -->
@@ -281,7 +296,7 @@
 										 <span class="label label-sm label-success">
 										启用</span>
 									</td>
-									<td>
+									<!-- <td>
 										2014-01-20 11:22:11
 									</td>
 									<td>
@@ -289,7 +304,7 @@
 									</td>
 									<td>
 										2014-01-20 11:22:11
-									</td>
+									</td> -->
 							<!-- 		<td class="center">
 										<button class="btn btn-md green" type="button" data-target="#yh_rule" data-toggle="modal">查看</button>
 									</td> -->
@@ -611,7 +626,7 @@
 		</div>
 	</div><!--启用 end-->
 
-	<div id="yh_rule" class="modal fade" tabindex="-1" data-width="400" data-backdrop="static" data-keyboard="false"> <!--查看 start-->
+	<div id="yh_group_rule" class="modal fade" tabindex="-1" data-width="400" data-backdrop="static" data-keyboard="false"> <!--查看 start-->
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -733,12 +748,15 @@
 
 <script type="text/javascript">
   $(function(){
+  	Metronic.init();
   	ComponentsDropdowns.init();	  
 	//日期框的初始化
 	$('.date-picker').datepicker({
 	    rtl: Metronic.isRTL(),
 	    orientation: "left",
-	    autoclose: true
+	    autoclose: true,
+	    format:'yyyy/mm/dd',
+	    language:'zh-CN'
 	});
 
 	//时间框的初始化
@@ -775,13 +793,14 @@
 	            "orderable": false //2
 	        }, {
 	            "orderable": false //3
-	        }, {
-	            "orderable": true  //4
-	        }, {
-	            "orderable": true //5
-	        },{
-	        	"orderable":true //6
 	        }
+	        // , {
+	        //     "orderable": true  //4
+	        // }, {
+	        //     "orderable": true //5
+	        // },{
+	        // 	"orderable":true //6
+	        // }
 	        // ,{
 	        // 	"orderable":false //7
 	        // }
@@ -791,6 +810,7 @@
 	    var $table = $('#tb2');
 	    $table.dataTable(dataTable_config);//表格插件初始化
 	    $.table_init($table);//表格选择初始化
+	    $('tbody > tr',$('#tb2')).dbclick($('#yh_group_rule'));//双击查看详情
 	    $('#styleToggle').toggleStyle('style_color');//切换样式插件初始化
 	})();       
 

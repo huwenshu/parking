@@ -380,6 +380,7 @@
 <script type="text/javascript" src="./metronic/assets/global/plugins/bootstrap-select/bootstrap-select.min.js"></script><!--bootstrap的下拉框插件-->
 <script type="text/javascript" src="./metronic/assets/global/plugins/jquery-multi-select/js/jquery.multi-select.js"></script><!--多选插件-->
 <script type="text/javascript" src="./metronic/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script><!--日期选择插件-->
+<script type="text/javascript" src="./metronic/assets/global/plugins/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js"></script><!--日期选择插件 国际化-->
 <script type="text/javascript" src="./metronic/assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script><!--时间选择插件-->
 <script type="text/javascript" src="./metronic/assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.js"></script><!--折扣那个插件-->
 <script type="text/javascript" src="./metronic/assets/global/plugins/bootbox/bootbox.min.js"></script><!--alert插件-->
@@ -404,6 +405,15 @@ Metronic.init(); // init metronic core components
 Layout.init(); // init current layout
 Demo.init(); // init demo features	
 // FormiCheck.init(); 
+;(function(global,$){
+		$.fn.dbclick = function(dialog){
+			this.bind('dblclick',function(){
+				//这里也需要一个获取数据的操作
+				var url = $('url');
+				dialog.modal('show');
+			})
+		}
+	})(window,$);
 
 ;(function(){
 	$.route = function(){//控制页面的跳转，用于展示的作用，放到线上就么用了
