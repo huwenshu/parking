@@ -792,7 +792,7 @@
 
 
 
-
+<script type="text/javascript" src="./metronic/assets/global/plugins/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js"></script>
 <script type="text/javascript">
 //双击看详情插件,在表单初始化的时候调用一下
 	;(function(global,$){
@@ -811,7 +811,9 @@
 	$('.date-picker').datepicker({
 	    rtl: Metronic.isRTL(),
 	    orientation: "left",
-	    autoclose: true
+	    autoclose: true,
+	    format:'yyyy/mm/dd',
+	    language:'zh-CN'
 	});
 
 	//时间框的初始化
