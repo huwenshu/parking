@@ -183,6 +183,37 @@
 							 查看规则修改历史
 						</a>
 					</div>
+					<!--<script type="text/javascript">
+						;(function(global,$){
+							$.fn.dialog_ctrl = function(url_modal,callback){
+								var that = this;
+								// var modalx = '';
+								var  init = function(){
+									$.ajax({
+										url:url_modal,
+										success:function(data){
+											// alert(data);
+											var modalx = $(data);
+											modalx.modal('show');
+											 //alert('dd');
+										},
+										error:function(error){
+											alert('数据获取出错！');
+										}
+
+									});
+									
+								};
+
+								that.bind('click',init);
+								return this;
+							}
+
+						})(window,$);
+						$(function(){
+							$('.tb_add').dialog_ctrl('./content/modal/yh/add.html',function(){});
+						});
+					</script>-->
 					<table class="table table-bordered table-hover" id="favourable">
 							<thead>
 							<tr>
@@ -385,7 +416,8 @@
 
 
 		<!--这个页面的弹窗都在这里 start-->
-	<div id="add" class="modal fade" tabindex="-1" data-width="400" data-backdrop="static" data-keyboard="false"> <!--添加 start-->
+		<!--添加 start-->
+	<div id="add" class="modal fade" tabindex="-1" data-width="400" data-backdrop="static" data-keyboard="false"> 
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -476,11 +508,11 @@
 										<label class="col-md-4 control-label">双休日类型</label>
 										<div class="col-md-6">
 											<div class="icheck-list">
-												<label><input id="saturday" type="radio" name="radio" value="saturday"/>周六</label>
+												<label><input id="saturday" type="radio" name="radio" value="saturday"/> 周六</label>
 												
-												<label><input id="sunday" type="radio" name="radio" value="sunday"/>周天</label>
+												<label><input id="sunday" type="radio" name="radio" value="sunday"/> 周天</label>
 												
-												<label><input id="sat_sun" type="radio" name="radio" value="sat_sun"/>周六+周日</label>
+												<label><input id="sat_sun" type="radio" name="radio" value="sat_sun"/> 周六+周日</label>
 											</div>
 										</div>
 									</div>
@@ -507,7 +539,8 @@
 				</div>
 			</div>
 		</div>
-	</div><!--添加 end-->
+	</div>
+	<!--添加 end-->
 
 
 	<div id="modify" class="modal fade" tabindex="-1" data-width="400" data-backdrop="static" data-keyboard="false"> <!--修改 start-->
